@@ -614,14 +614,14 @@ li#score{
 
 
 
-/* lastpage */
+/* last page */
 
 .page5{
 
     height:100vh;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
-    background-image: url("img/lastmoney.png");
+    background-image: url("img/lastmoney1.gif");
     background-position:center;
     background-repeat: no-repeat;
     background-size: contain;

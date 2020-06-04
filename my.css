@@ -1,0 +1,661 @@
+
+body{
+    /*if we do not set margin, there will be some margin on 4 sides. */
+    margin:0;
+    background-color:black;
+    color:white;
+    height:3000px;
+    overflow-x:hidden"
+}
+
+  
+
+.page1{
+    height:100vh;
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Press Start 2P', cursive;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+}
+.page1 img{
+  max-width: 45%;
+}
+.logo h4{
+    color: white;
+    margin-bottom: 120px;
+}
+
+.pacghost{
+    animation-name: righttoleft;
+    animation-duration: 8s; /* how long, s sets seconds ms can be used for milliseconds, i.e. 200ms */
+    animation-iteration-count: infinite; /* can be set to run a fixed number of times with a number */
+    /* animation-direction: reverse; can also run forwards or backwards */
+    animation-timing-function: linear;
+
+}
+
+@-webkit-keyframes righttoleft {
+    0%  { transform:translate(100%,0);}
+    100%{ transform:translate(-100%,0);}
+}
+
+@keyframes righttoleft {
+    0%  { transform: translate(100%,0);}
+    100%{ transform: translate(-100%,0);}
+}
+
+.pacman{
+    margin-right:150px;
+    height:100px;
+}
+
+
+
+.helptext{
+    text-align: left;
+    margin-bottom: 0px;
+    animation-name: help;
+    animation-duration: 8s; /* how long, s sets seconds ms can be used for milliseconds, i.e. 200ms */
+    animation-iteration-count: infinite; /* can be set to run a fixed number of times with a number */
+    /* animation-direction: reverse; can also run forwards or backwards */
+    animation-timing-function: linear; 
+
+}
+
+.help{
+    width: 150px;
+    margin-left:330px;
+}
+
+@-webkit-keyframes help {
+    0% { transform: translate(100%,0)}
+    100%{ transform:translate(-100%,0);}
+
+}
+
+@keyframes help {
+    0% { transform: translate(100%,0)}
+    100%{ transform: translate(-100%,0);}
+}
+
+
+.text{
+    margin-top:80px;
+    animation-name: blink;
+    animation-duration: 1s; /* how long, s sets seconds ms can be used for milliseconds, i.e. 200ms */
+    animation-iteration-count: infinite; /* can be set to run a fixed number of times with a number */
+    /* animation-direction: reverse; can also run forwards or backwards */
+    /* animation-timing-function: linear; can be used to apply easing to the animation, try ease-in */
+
+}
+
+@-webkit-keyframes blink {
+    0%  { opacity:1; }
+    1%  { opacity:0; }
+    50% { opacity:0; }
+    51% { opacity:1; }
+  }
+  
+  @keyframes blink {
+    0%  { opacity:1; }
+    1%  { opacity:0; }
+    50% { opacity:0; }
+    51% { opacity:1; }
+  }
+
+a.click{
+   color: white;
+   text-decoration:none;
+}
+
+/* page2 */
+.page3{
+    height:100vh;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url("img/map1.png");
+    background-position:center;
+    background-repeat: contain;
+    background-size: contain;
+
+}
+
+#ready{
+    height:10px;
+}
+
+
+.ready1 h1{
+    margin-top: 152px;
+    margin-bottom: 28px;
+
+}
+
+.clickbttn{
+    position: relative;
+    margin-left:45%;
+    width:160px;
+    height:28px;
+    background-color:pink;
+    text-align:center;
+    vertical-align: middle;
+    animation-name: bttn;
+    animation-duration: 0.5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes bttn{
+    /* more complex animation going through particular stages */
+    0%{
+      background: red;
+    }
+    25%{
+      background: orange;
+    }
+    50%{
+      background: yellow;
+    }
+    75%{
+      background: lightgreen;
+    }
+    90%{
+      background: rebeccapurple;
+    }
+  }
+
+
+a.click2{
+
+    font-size: 14px;
+    text-align: center;
+    color:white;
+    text-decoration:none;
+    font-size:11px;
+
+    text-shadow: -1.5px 0 blue, 0 1.8px blue, 1px 0 blue, 0 -1px blue;
+}
+
+
+
+.ready2 h2{
+    margin-top: 6.8rem;
+}
+
+.ri{
+    margin-top: 2em;
+    width:280px;
+    animation-name: upanddown;
+    animation-duration: 0.5s; /* how long, s sets seconds ms can be used for milliseconds, i.e. 200ms */
+    animation-iteration-count: infinite; /* can be set to run a fixed number of times with a number */
+    /* animation-direction: reverse; can also run forwards or backwards */
+    /* animation-timing-function: linear; can be used to apply easing to the animation, try ease-in */
+
+}
+
+@-webkit-keyframes upanddown {
+    0% { transform: translate(0,20%)}
+    50%{ transform:translate(0,-20%);}
+    100%{ transform:translate(0,20%);}
+
+}
+
+@keyframes upanddown {
+    0% { transform: translate(0,20%)}
+    50%{ transform:translate(0,-20%);}
+    100%{ transform: translate(0,20%);}
+}
+
+
+/* page3-modi */
+
+
+.page33{
+
+    position: relative;
+    height:100vh;
+    font-family: 'Press Start 2P', cursive;
+    overflow:hidden;
+    
+}
+
+#blank{
+    height:100px;
+}
+
+.eat{
+    font-size: 80px;
+    color:yellow;
+    animation: dotss 3s infinite linear;
+ 
+    
+
+}
+
+img.ghostfollow{
+    height:80px;
+}
+
+img.pac{
+    width:80px;
+}
+
+#wait{margin:0px;}
+
+
+/* 
+#wait ::after{
+    font-size: 90px;
+    content:'';
+    animation-name: dots;
+    animation-duration: 8s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear; 
+} */
+
+@-webkit-keyframes dotss {
+    0% { transform: translate(-10%,0)}
+    50% { transform: translate(0%,0)}
+    100%{ transform:translate(10%,0);}
+
+}
+
+@keyframes dotss {
+    0% { transform: translate(-10%,0)}
+    30% { transform: translate(0%,0)}
+    70% { transform: translate(0%,0)}
+    100%{ transform: translate(100%,0);}
+}
+
+
+/* @keyframes dots{  
+    0%{
+      content: '.';}
+    10%{
+      content: '..'}
+    20%{
+        content: '.. .' }
+    30%{
+        content: '. . . .'}
+    40%{
+        content: '.....'}
+    50%{
+        content: '......'  }
+    60%{
+        content:'.......' }
+    70%{
+        content:'........' }
+    100%{
+        content: '........';} 
+}    */
+
+
+
+
+.box{
+    position: absolute;
+    width:80vw; 
+    height:380px; 
+    top: 35%;
+    left: 8%;
+    border: 10px solid blue; 
+    border-radius: 30px;
+    color: white;
+    padding: 20px 30px 20px 30px;
+    line-height:250%;
+}
+
+.box h3{
+    text-align: center;
+    vertical-align:middle;
+}
+
+.img siren{
+    vertical-align:middle;
+    line-height:150px;
+}
+
+a.coppa {
+    background-color:red;
+    background-size: 0em;
+}
+
+
+
+
+[data-tooltip-text]:hover {
+	position: relative;
+}
+
+
+
+/* 
+[data-tooltip-text]:hover:after {
+	content: attr(data-tooltip-text);
+
+    position: absolute;
+	top: 100%;
+	left: 0%;
+    
+    background-color: rgba(91, 127, 227, 0.997);
+	color: #FFFFFF;
+	font-size: 9px;
+
+	z-index: 9999;
+} */
+
+
+[data-tooltip-text]:hover:after {
+	background-color: #000000;
+	background-color: rgba(101, 7, 7, 0.977);
+
+	-webkit-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	color: #FFFFFF;
+	font-size: 9px;
+	content: attr(data-tooltip-text);
+
+    margin-bottom: 10px;
+	bottom: 130%;
+	left: 0;    
+	padding: 7px 12px;
+	position: absolute;
+	width: 350px;
+	word-wrap: break-word;
+
+	z-index: 9999;
+}
+
+a.hide:after{
+    color:red;
+    content: '"???"'
+} 
+
+a.hide:hover:after{
+    color:red;
+    content:'5,855'
+} 
+
+a.go{
+    color:yellow;
+    background-color:red;
+    text-decoration:none;
+}
+
+/* span.a{
+    color: #f8b840;
+}
+
+span.third{
+    color:mediumturquoise;
+}
+
+span.party{
+    color:pink;
+}
+
+span.companies{
+    color:red;
+} */
+
+
+/* page 4 */
+
+.page2{
+    height:100vh;
+
+    font-family: 'Press Start 2P', cursive;
+    background-position:center;
+    background-repeat: contain;
+    background-size: contain;
+}
+
+#p2{
+    
+    height:30px;
+}
+#up{
+    color:yellow;;
+}
+
+.score{
+    text-align: center;
+    height:50px;
+    font-size: 1rem;
+
+}
+
+.score li{
+    display: inline;
+}
+
+li#data{
+    margin-left: 450px;
+}
+
+a.total{
+    text-decoration:none;
+    color:yellow;
+}
+
+
+
+
+li#number{
+    margin-left: 50px;
+    color:yellow;
+    animation-name: blink;
+    animation-duration: 1s; /* how long, s sets seconds ms can be used for milliseconds, i.e. 200ms */
+    animation-iteration-count: infinite; /* can be set to run a fixed number of times with a number */
+    /* animation-direction: reverse; can also run forwards or backwards */
+    /* animation-timing-function: linear; can be used to apply easing to the animation, try ease-in */
+
+}
+
+@-webkit-keyframes blink {
+    0%  { opacity:1; }
+    1%  { opacity:0; }
+    50% { opacity:0; }
+    51% { opacity:1; }
+  }
+  
+  @keyframes blink {
+    0%  { opacity:1; }
+    1%  { opacity:0; }
+    50% { opacity:0; }
+    51% { opacity:1; }
+  }
+
+
+.list{
+    height:50px;
+    text-align:left;
+    margin-left: 250px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.list li{
+    display: inline;
+    font-size: 1.5rem;
+}
+
+li#slash{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+div.ghost1{
+    list-style:none;
+    margin-bottom: 40px;
+    padding:0;
+    text-align:left;
+}
+
+div.ghost2{
+    list-style:none;
+    margin-bottom: 40px;
+    padding:0;
+    text-align:left;
+
+}
+
+
+div.ghost3{
+    list-style:none;
+    margin-bottom: 40px;
+    padding:0;
+    text-align:left;
+
+}
+
+
+div.ghost4{
+    list-style:none;
+    margin-bottom: 20px;
+    padding:0;
+    text-align:left;
+
+}
+
+
+.ghost1 li{
+    display:inline;
+    font-size: 1rem;
+    vertical-align:middle;
+    color: red;
+}
+
+.ghost2 li{
+
+    display:inline;
+    font-size: 1rem;
+    vertical-align:middle;
+    color: pink;
+}
+
+.ghost3 li{
+
+    display:inline;
+    font-size: 1rem;
+    vertical-align:middle;
+    color:mediumturquoise;
+}
+
+.ghost4 li{
+
+    display:inline;
+    font-size: 1rem;
+    vertical-align:middle;
+    color: #f8b840;
+
+}
+
+
+img.ggg{
+    vertical-align:middle;
+    margin-left:30px;
+    margin-right:100px;
+}
+
+
+li#ghost{
+    width:300px;
+    margin-left: 50px;
+}
+
+li#character{
+    width:100px;
+    margin-top:100px;
+    margin-left: 100px;
+
+
+}
+li#nickname{
+    width:100px;
+    margin-top:100px;
+    margin-left: 100px;
+
+
+
+}
+li#score{
+    width:100px;
+    margin-top:100px;
+    margin-left: 60px;
+
+
+
+}
+
+.clickus{
+    margin-left:30px;
+    margin-top: 0px;
+}
+
+/* lastpage */
+
+.page5{
+
+    height:100vh;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url("img/lastmoney.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#blank1{
+    height:20px;
+}
+
+
+#content{
+    margin-top:20px;
+    color:white;
+}
+
+.content-bttm{
+    position: relative;
+    width:33vw; 
+    height:380px; 
+    top: 39%;
+    left: 33%;
+
+    color: white;
+
+    line-height:250%;
+    font-size: 11px;
+    text-shadow: -1.5px 0 black , 0 1.8px black , 1px 0 black , 0 -1px black ;
+}
+
+
+.contnet-bttm2{
+    position: relative;
+    width:40vw; 
+    height:380px; 
+    margin-top: 12px;
+    left: 30%;
+
+    color: white;
+
+    line-height:250%;
+    font-size: 11px;
+    text-shadow: -1.5px 0 black , 0 1.8px black , 1px 0 black , 0 -1px black ;
+
+}
+
+

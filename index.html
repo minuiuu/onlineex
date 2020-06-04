@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Privacy&Security Ver.</title>
+        <link rel="stylesheet" href="my.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+            <script>
+                    var audio = new Audio("audio/opening_song.mp3");
+                    audio.oncanplaythrough = function ( ) { }
+                    audio.onended = function ( ) { }
+                    /*
+                    function play() {
+                    var audio = document.getElementById("ready");
+                    audio.play();
+                    }
+                    */
+
+                    var audio1 = new Audio("audio/eating.mp3");
+                    audio1.oncanplaythrough = function ( ) { }
+                    audio1.onended = function ( ) { }
+
+
+                    var dots = window.setInterval( function() {
+                    var wait = document.getElementById("wait");
+                    if ( wait.innerHTML.length > 8 ) 
+                       wait.innerHTML = ".........";
+                    else 
+                        wait.innerHTML += '.';
+
+                    loopCount = loopCount +1;
+                    if( loopCount >=12){
+                        wait.innerHTML = "";
+                        loopCount=0;
+                    }
+                    }, 250);
+
+
+            </script>
+
+            
+<!-- page1 -->
+        <div class="page1">
+            <div class="logo">
+             <img src="img/logo.png" >
+             <h4>Privacy and Security Ver.</h4>
+            </div>
+            <div class="helptext">
+                <img class="help" src="img/help.png">
+            </div>
+
+            <div class="pacghost">
+                <img class="pacman" src="img/pacman-reverse.gif">
+                <img class="ghost" src="img/eatdata-reverse.gif">
+            </div>
+            <div class="text">
+               <a href="#ready" class="click" onclick="audio.play ( )" alt=""> <h5>PRESS START BUTTON</h5> </a>
+            </div>
+
+        </div>
+
+<!-- page2=divpage3 -->
+        <div class="page3">
+                <div id="ready">
+                </div>
+                <div class="ready1">   
+                    <h1> WE ARE READY </h1>
+                </div>
+                <div class="clickbttn">
+                    <a href="#blank" class="click2" onclick="audio1.play ( )" onclick="document.getElementById('wait')"  alt=""> OPEN THE GATE </a>
+                </div>
+                <div class="readyimg">
+                    <img class=ri src="img/mapimg.gif">
+                </div>
+                <div class="ready2">
+                    <h2> TO COLLECT YOUR DATA </h2>
+                </div>
+        </div>
+
+
+
+<!-- page3=divpage4 -->
+        <div class="page33">
+                    <div id="blank"></div>
+                    <div class="eat">
+                        <img class="ghostfollow" src="img/ghostsss.gif">
+                        <span id="wait"></span>
+                        <img class="pac" src="img/pacman.gif">
+                    </div>
+
+                    <div class="box">
+                            <h3><img class="siren" src="img/siren.png" width="50px" > YOUR SMARTPHONE IS TRACKING YOU <img class="siren" src="img/siren.png" width="50px" >  </h3> 
+                            <p id= "textinbox">Do you know your data are being tracked while you are using applications in you and your children's smartphone?
+                                    About <span class="colorchange"><a class="hide"></a></span>  Android apps that agree to abide by <a class="coppa" data-tooltip-text="It is an abbreviation for Children’s Online Privacy Protection Act directed to children under 13 years of age. The primary goal of COPPA is protect children’s privacy online."> COPPA</a> 
+                                    as part of their inclusion in the Play Store’s Designed for Families (DFF) program are potentially in violation of law.
+                                    Apps have accessed <a class="go" href="#p2" >sensitive data</a> and transmitted them over the Internet and share to <span class="a">a</span> <span class="third">third</span> <span class="party">party</span> <span class="companies">companies</span>  without users' agreement.</p>      
+                    </div>
+                   
+        </div>
+
+
+<!-- page4=divpage2 -->
+        <div class="page2">
+            <div id="p2">
+            </div>
+            <div class="score">
+                <li id="up">USER#1</li>
+                <li id="data">COLLECTED DATA SCORE</li>
+                 <li id="number">1,000,000</li>
+            </div>
+            <div class="list">
+                <li>TYPE</li>
+                <li id="slash"> / </li>
+                <li>CHARACTER </li>
+                <li id="slash"> / </li>
+                <li>DETAILS</li>
+                <li id="slash"> / </li>
+                <li>SCORE </li>
+            </div>
+
+            <div class="ghost1">
+                <li id="ghost">
+                        <a class="total" href="#blank1"><img class="ggg" src="img/ghots_red.png" width="70px;"></a>
+                </li>
+                <li id="type">
+                    -API
+                </li>
+                <li id="character">
+                        &nbsp;"GEOLOCATION"
+                </li>
+
+                <li id="nickname">
+                        &nbsp;&nbsp;"VERY DETAILED DATA"
+                </li>
+                <li id="score">
+                        &nbsp;450,000   
+                </li>
+            </div>
+
+            <div class="ghost2">
+                <li id="ghost">
+                        <a class="total" href="#blank1"> <img class="ggg" src="img/ghost_pink.png" width="70px;" > </a>
+                </li>
+                <li id="type">
+                        -API
+                    </li>
+                    <li id="character">
+                        &nbsp;"GET_ACCOUNTS"
+                    </li>
+                <li id="nickname">
+                    "EMAIL&OTHER ACCOUNTS"
+                </li>
+                <li id="score">
+                    300,000        
+                </li>  
+            </div> 
+
+            <div class="ghost3">
+                <li id="ghost">
+                        <a class="total" href="#blank1"><img class="ggg" src="img/ghost_mint.png" width="70px;"></a>
+                </li>
+                <li id="type">
+                        -API
+                    </li>
+                    <li id="character">
+                            &nbsp;"READ_PHONE_STATE"
+                    </li>
+                <li id="nickname">
+                        &nbsp;&nbsp;&nbsp;"NUMBER"
+                </li>
+                <li id="score">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200,000                 
+                </li> 
+            </div>
+
+            <div class="ghost4" >
+                <li id="ghost">
+                        <a class="total" href="#blank1"><img class="ggg" src="img/ghost_yellow.png" width="70px;"></a>
+                </li>
+                <li id="type">
+                        -WIFI
+                    </li>
+                    <li id="character">
+                        "GEOLOCATION"
+                    </li>
+                 <li id="nickname">
+                        &nbsp;&nbsp;&nbsp;&nbsp; "STREET-LEVEL"
+                </li>
+                <li id="score">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50,000            
+                </li> 
+            </div>
+            <div class="clickus">
+                <img src="img/clickus.png" height="70px;">
+            </div>
+        </div>
+
+
+
+
+        <div class="page5">
+            <div id="blank1">
+
+            </div>
+            <div class="left_balnk">
+            </div>
+            <div id="content">
+                <h2> WHY ARE THEY COLLECTING OUR DATA?</h2>
+            </div>
+            <div class="content-bttm">
+                    Most companies receiving <br> location data are ads companies. <br> They build a profile about the user <br>to perform behavioural advertising
+            </div>
+            <div class="contnet-bttm2">
+                    ,which is prohibited by COPPA.<br> Because collecting data have become <br>a significant part of the digital economy <br>with the online advertising industry earning.
+            </div>
+            <div class="right_blank">
+
+            </div>
+
+
+        </div>
+      
+    </body>
+
+</html>

@@ -350,32 +350,7 @@ a.coppa {
 } */
 
 
-[data-tooltip-text]:hover:after {
-	background-color: #000000;
-	background-color: rgba(101, 7, 7, 0.977);
 
-	-webkit-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
-	-moz-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
-	box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
-
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-
-	color: #FFFFFF;
-	font-size: 9px;
-	content: attr(data-tooltip-text);
-
-    margin-bottom: 10px;
-	bottom: 130%;
-	left: 0;    
-	padding: 7px 12px;
-	position: absolute;
-	width: 350px;
-	word-wrap: break-word;
-
-	z-index: 9999;
-}
 
 a.hide:after{
     color:red;
@@ -481,7 +456,7 @@ li#number{
 .list{
     height:50px;
     text-align:left;
-    margin-left: 250px;
+    margin-left: 400px;
     margin-top: 60px;
     margin-bottom: 30px;
 }
@@ -491,8 +466,8 @@ li#number{
 }
 
 li#slash{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 65px;
+    margin-right: 70px;
 }
 
 
@@ -565,7 +540,7 @@ div.ghost4{
 
 img.ggg{
     vertical-align:middle;
-    margin-left:30px;
+    margin-left:100px;
     margin-right:100px;
 }
 
@@ -578,14 +553,14 @@ li#ghost{
 li#character{
     width:100px;
     margin-top:100px;
-    margin-left: 100px;
+    margin-left: 48px;
 
 
 }
 li#nickname{
     width:100px;
     margin-top:100px;
-    margin-left: 100px;
+    margin-left: 60px;
 
 
 
@@ -600,9 +575,44 @@ li#score{
 }
 
 .clickus{
-    margin-left:30px;
+    margin-left:80px;
     margin-top: 0px;
 }
+
+
+
+
+[data-tooltip-text]:hover:after {
+	background-color: #000000;
+	background-color: rgba(55, 55, 55, 0.922);
+
+	-webkit-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	color: #FFFFFF;
+	font-size: 9px;
+	content: attr(data-tooltip-text);
+
+    margin-bottom: 10px;
+	bottom: 130%;
+	left: 0;    
+	padding: 7px 12px;
+	position: absolute;
+	width: 350px;
+	word-wrap: break-word;
+    line-height: 200%;
+	z-index: 9999;
+}
+
+
+
+
+
 
 /* lastpage */
 
